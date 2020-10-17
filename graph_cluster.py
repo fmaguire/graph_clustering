@@ -91,7 +91,7 @@ def write_graph(graph, output_fp):
     """
     output = output_fp + ".gexf"
     print("Graph written to {output}, visualise in gephi or similar")
-    nx.write_graph(graph, output)
+    nx.write_gexf(graph, output)
 
 
 if __name__ == '__main__':
@@ -122,4 +122,4 @@ if __name__ == '__main__':
 
     graph = add_metadata(graph, args.metadata, args.metadata_col)
 
-    write_graph(graph)
+    write_graph(graph, args.output)
