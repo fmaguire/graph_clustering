@@ -90,7 +90,7 @@ def write_graph(graph, output_fp):
     Output graph as gexf formatted for visualising in gephi
     """
     output = output_fp + ".gexf"
-    print("Graph written to {output}, visualise in gephi or similar")
+    print(f"Graph written to {output}, visualise in gephi or similar")
     nx.write_gexf(graph, output)
 
 
